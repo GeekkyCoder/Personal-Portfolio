@@ -108,3 +108,31 @@
 .education-section {
   margin-top: 2em;
 }
+
+@media (max-width: 600px) {
+  .about-container {
+    width: 80%;
+    margin: 8em auto;
+  }
+
+  .work-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .work-section h1 {
+    margin: 0.5em 0;
+    margin-left: 1em;
+  }
+
+  .education-section h1 {
+    margin-left: 1em;
+  }
+
+  .work-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

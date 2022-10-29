@@ -211,6 +211,7 @@ ul li a:hover {
 .card-title {
   color: #000000;
   font-size: 1.5rem;
+  margin-top: 1em;
 }
 
 .card-description {
@@ -326,4 +327,163 @@ footer {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   text-transform: uppercase;
+}
+
+/* menu bar  */
+.menu {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 1;
+  display: none;
+}
+
+.menu img {
+  width: 30px;
+}
+
+.center-tech {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  justify-content: center;
+}
+
+/* open and close navigation for mobile  */
+
+/* Responsiveness  */
+@media (max-width: 600px) {
+  /* header  */
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    min-height: 100vh;
+    transition: transform 0.5s ease-in;
+  }
+  nav {
+    flex-direction: column;
+    margin-top: 5em;
+  }
+
+  ul {
+    flex-direction: column;
+    /* height: 30vh; */
+    margin-left: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  ul li a {
+    margin-left: 0%;
+    margin-top: 2em;
+    display: block;
+  }
+
+  .right {
+    flex-direction: column;
+    margin-left: 0%;
+  }
+
+  .social {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 2em;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu:hover {
+    cursor: pointer;
+  }
+
+  .close {
+    transform: translateX(-100%);
+  }
+
+  .open {
+    transform: translateX(1);
+  }
+
+  /* main section  */
+  .main-flex {
+    margin-top: 8em;
+  }
+
+  .main-left h2 {
+    font-size: 1.7rem;
+  }
+
+  .main-right {
+    width: 40%;
+  }
+
+  .top,
+  .bottom {
+    padding: 0 1em;
+  }
+
+  .top img,
+  .bottom img {
+    width: 36px;
+    object-fit: cover;
+  }
+
+  /* main section2 tech stack  */
+
+  .technologies-container {
+    margin-top: 1em;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .main .main-tech-title {
+    font-size: 1.5rem;
+  }
+
+  .main .main-tech-description {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  /* main section3 projects  */
+  .project-container {
+    flex-direction: column;
+    margin: 1em;
+    width: 85%;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 2em;
+    border: 2px solid gainsboro;
+    margin-left: 1em;
+  }
+
+  /* footer section  */
+  .footer-flex-right h3 {
+    font-size: 2rem;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .social {
+    flex-direction: row;
+  }
+
+  .wrapper .artist {
+    padding: 1em;
+    font-size: 1rem;
+    padding: 0 1.5em;
+  }
 }
