@@ -349,6 +349,29 @@ footer {
   justify-content: center;
 }
 
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.hidden {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.slide-up {
+  transform: translateY(-150%);
+  transition: all 1s;
+  opacity: 0;
+}
+
+.slide-down {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s;
+}
 /* open and close navigation for mobile  */
 
 /* Responsiveness  */
@@ -361,6 +384,7 @@ footer {
     width: 300px;
     min-height: 100vh;
     transition: transform 0.5s ease-in;
+    z-index: 2
   }
   nav {
     flex-direction: column;
